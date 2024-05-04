@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="stylerps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cont">
+    <h1>Rock - Paper - Scissors</h1>
+
+    <div class="choices">
+    <button onclick="playGame('rock')"><i class="far fa-hand-rock"></i></button>
+    <button onclick="playGame('paper')"><i class="far fa-hand-paper"></i></button>
+    <button onclick="playGame('scissors')"><i class="far fa-hand-scissors"></i></button>
+    </div>
+
+    <div id="playerDisplay"><span class="thin">Pick one </span></div>
+    <div id="computerDisplay"></div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay"><span class="thin">Player Score: </span>
+        <span id="playerScoreDisplay">0</span>
+    </div>
+    <div class="scoreDisplay"><span class="thin">Computer Score: </span>
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <script src="scriptrps.js"></script>
+
+    </div>
+</body>
+</html>
